@@ -8,7 +8,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const isKorean = locale === "ko";
 
-  const title = isKorean ? "룰렛 게임 - Toolbox" : "Roulette Game - Toolbox";
+  const title = isKorean ? "룰렛 게임 - Toolbag" : "Roulette Game - Toolbag";
   const description = isKorean
     ? "가중치 기반 공정한 룰렛 게임. 항목과 확률을 설정하고 멋진 애니메이션으로 결과를 확인하세요. 추첨, 경품, 팀 나누기 등 다양한 용도로 활용 가능!"
     : "Fair weighted roulette game. Set items and probabilities, watch stunning animations to see results. Perfect for draws, prizes, team splitting and more!";
@@ -24,7 +24,7 @@ export async function generateMetadata({
       description,
       type: "website",
       locale: isKorean ? "ko_KR" : "en_US",
-      siteName: "Toolbox",
+      siteName: "Toolbag",
       images: [
         {
           url: "/images/roulette-og.png",

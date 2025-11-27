@@ -5,7 +5,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const isKorean = locale === "ko";
 
   return {
-    title: isKorean ? "2048 게임 - Toolbox" : "2048 Game - Toolbox",
+    title: isKorean ? "2048 게임 - Toolbag" : "2048 Game - Toolbag",
     description: isKorean
       ? "중독성 있는 2048 퍼즐 게임을 무료로 즐기세요! 같은 숫자를 합쳐서 2048 타일을 만드는 전략 퍼즐 게임입니다. 키보드나 터치로 간편하게 플레이하세요."
       : "Play the addictive 2048 puzzle game for free! Merge same numbers to create the 2048 tile. Strategic puzzle game with keyboard and touch controls.",
@@ -13,13 +13,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       ? ["2048", "2048 게임", "퍼즐 게임", "브라우저 게임", "무료 게임", "숫자 게임", "전략 게임", "온라인 게임"]
       : ["2048", "2048 game", "puzzle game", "browser game", "free game", "number game", "strategy game", "online game"],
     openGraph: {
-      title: isKorean ? "2048 게임 - Toolbox" : "2048 Game - Toolbox",
+      title: isKorean ? "2048 게임 - Toolbag" : "2048 Game - Toolbag",
       description: isKorean
         ? "같은 숫자를 합쳐서 2048을 만드세요! 중독성 있는 퍼즐 게임"
         : "Merge same numbers to create 2048! Addictive puzzle game",
       type: "website",
       locale: locale === "ko" ? "ko_KR" : "en_US",
-      siteName: "Toolbox",
+      siteName: "Toolbag",
       images: [
         {
           url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80",
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     twitter: {
       card: "summary_large_image",
-      title: isKorean ? "2048 게임 - Toolbox" : "2048 Game - Toolbox",
+      title: isKorean ? "2048 게임 - Toolbag" : "2048 Game - Toolbag",
       description: isKorean
         ? "같은 숫자를 합쳐서 2048을 만드세요!"
         : "Merge same numbers to create 2048!",

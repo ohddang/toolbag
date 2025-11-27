@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Toolbox - 유용한 소프트웨어 모음',
-    short_name: 'Toolbox',
+    name: 'Toolbag - 유용한 소프트웨어 모음',
+    short_name: 'Toolbag',
     description: '게임, 유틸리티, 테스트 등 유용한 소프트웨어를 한 곳에서',
     start_url: '/',
     display: 'standalone',

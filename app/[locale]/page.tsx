@@ -213,7 +213,7 @@ function HomeContent() {
                   <span className="text-2xl font-bold text-white">🧰</span>
                 </div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent">
-                  Toolbox
+                  Toolbag
                 </h1>
               </Link>
               <nav
@@ -458,7 +458,7 @@ function HomeContent() {
                     <span className="text-xl">🧰</span>
                   </div>
                   <span className="text-xl font-bold bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent">
-                    Toolbox
+                    Toolbag
                   </span>
                 </Link>
                 <p className="text-sm text-slate-600">
@@ -536,7 +536,7 @@ function LoadingScreen() {
         
         {/* 로딩 텍스트 */}
         <h2 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent">
-          Toolbox
+          Toolbag
         </h2>
         
         {/* 로딩 도트 */}

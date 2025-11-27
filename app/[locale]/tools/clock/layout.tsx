@@ -5,7 +5,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const isKorean = locale === "ko";
 
   return {
-    title: isKorean ? "시계 & 스톱워치 - Toolbox" : "Clock & Stopwatch - Toolbox",
+    title: isKorean ? "시계 & 스톱워치 - Toolbag" : "Clock & Stopwatch - Toolbag",
     description: isKorean
       ? "큰 화면의 디지털 시계와 정밀한 스톱워치! 현재 시간을 한눈에 보거나 시간을 정확하게 측정하세요. 모바일, 태블릿, PC 모두 최적화되어 있습니다."
       : "Large digital clock and precise stopwatch! Check the current time at a glance or measure time accurately. Optimized for mobile, tablet, and PC.",
@@ -13,13 +13,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       ? ["시계", "스톱워치", "타이머", "디지털 시계", "온라인 시계", "무료 시계", "대형 시계", "시간 측정"]
       : ["clock", "stopwatch", "timer", "digital clock", "online clock", "free clock", "large clock", "time measurement"],
     openGraph: {
-      title: isKorean ? "시계 & 스톱워치 - Toolbox" : "Clock & Stopwatch - Toolbox",
+      title: isKorean ? "시계 & 스톱워치 - Toolbag" : "Clock & Stopwatch - Toolbag",
       description: isKorean
         ? "큰 화면의 디지털 시계와 정밀한 스톱워치"
         : "Large digital clock and precise stopwatch",
       type: "website",
       locale: locale === "ko" ? "ko_KR" : "en_US",
-      siteName: "Toolbox",
+      siteName: "Toolbag",
       images: [
         {
           url: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&w=1200&q=80",
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     twitter: {
       card: "summary_large_image",
-      title: isKorean ? "시계 & 스톱워치 - Toolbox" : "Clock & Stopwatch - Toolbox",
+      title: isKorean ? "시계 & 스톱워치 - Toolbag" : "Clock & Stopwatch - Toolbag",
       description: isKorean
         ? "큰 화면의 디지털 시계와 정밀한 스톱워치"
         : "Large digital clock and precise stopwatch",

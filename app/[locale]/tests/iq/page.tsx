@@ -45,7 +45,7 @@ export default function IQTestPage() {
                   <span className="text-xl">🧰</span>
                 </div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                  Toolbox
+                  Toolbag
                 </h1>
               </Link>
               <div className="flex items-center gap-4">
@@ -69,7 +69,7 @@ export default function IQTestPage() {
         {/* 푸터 */}
         <footer className="mt-12 border-t border-blue-100 bg-gradient-to-b from-blue-50 to-white py-8">
           <div className="mx-auto max-w-7xl px-6 text-center text-sm font-medium text-slate-500">
-            © 2025 Toolbox. All rights reserved.
+            © 2025 Toolbag. All rights reserved.
           </div>
         </footer>
       </div>

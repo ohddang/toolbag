@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
 
-export const alt = 'Toolbox - 유용한 소프트웨어를 한 곳에서';
+export const alt = 'Toolbag - 유용한 소프트웨어를 한 곳에서';
 export const size = {
   width: 1200,
   height: 630,
@@ -30,7 +30,7 @@ export default async function Image() {
       >
         <div style={{ fontSize: 180, marginBottom: 20 }}>🧰</div>
         <div style={{ fontSize: 80, fontWeight: 'bold', marginBottom: 20 }}>
-          Toolbox
+          Toolbag
         </div>
         <div style={{ fontSize: 40, opacity: 0.9, textAlign: 'center' }}>
           유용한 소프트웨어를 한 곳에서

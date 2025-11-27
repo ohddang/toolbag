@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { locales } from "./i18n/settings";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://toolbox.com";
+  const baseUrl = "https://toolbag.vercel.app";
 
   // 게임 페이지들
   const games = [

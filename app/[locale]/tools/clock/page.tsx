@@ -50,7 +50,7 @@ export default function ClockPage() {
                   <span className="text-xl">🧰</span>
                 </div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Toolbox
+                  Toolbag
                 </h1>
               </Link>
               <div className="flex items-center gap-4">

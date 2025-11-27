@@ -30,9 +30,9 @@ export async function generateMetadata({
   const metadata: Record<Locale, Metadata> = {
     ko: {
       title:
-        "Toolbox - 유틸리티 소프트웨어 모음 | 게임, 유틸리티, 최신 정보",
+        "Toolbag - 유틸리티 소프트웨어 모음 | 게임, 유틸리티, 최신 정보",
       description:
-        "Toolbox는 게임 도구, 시스템 유틸리티, 생산성 소프트웨어 등 다양한 유용한 프로그램을 한 곳에서 찾을 수 있는 플랫폼입니다. 무료 및 유료 소프트웨어를 쉽게 다운로드하고 최신 정보를 확인하세요.",
+        "Toolbag는 게임 도구, 시스템 유틸리티, 생산성 소프트웨어 등 다양한 유용한 프로그램을 한 곳에서 찾을 수 있는 플랫폼입니다. 무료 및 유료 소프트웨어를 쉽게 다운로드하고 최신 정보를 확인하세요.",
       keywords: [
         "유틸리티 소프트웨어",
         "게임 도구",
@@ -48,25 +48,25 @@ export async function generateMetadata({
         "소프트웨어 다운로드",
       ],
       openGraph: {
-        title: "Toolbox - 유틸리티 소프트웨어 모음",
+        title: "Toolbag - 유틸리티 소프트웨어 모음",
         description:
           "유용한 소프트웨어를 한 곳에서 찾아보세요. 게임 도구부터 유틸리티까지!",
-        url: "https://toolbox.com/ko",
-        siteName: "Toolbox",
+        url: "https://toolbag.vercel.app/ko",
+        siteName: "Toolbag",
         locale: "ko_KR",
         type: "website",
       },
       twitter: {
         card: "summary_large_image",
-        title: "Toolbox - 유틸리티 소프트웨어 모음",
+        title: "Toolbag - 유틸리티 소프트웨어 모음",
         description:
           "유용한 소프트웨어를 한 곳에서 찾아보세요. 게임 도구부터 유틸리티까지!",
       },
     },
     en: {
-      title: "Toolbox - Utility Software Collection | Games, Utilities, Latest News",
+      title: "Toolbag - Utility Software Collection | Games, Utilities, Latest News",
       description:
-        "Toolbox is a platform where you can find various useful programs including game tools, system utilities, and productivity software in one place. Easily download free and paid software and check the latest information.",
+        "Toolbag is a platform where you can find various useful programs including game tools, system utilities, and productivity software in one place. Easily download free and paid software and check the latest information.",
       keywords: [
         "Utility Software",
         "Game Tools",
@@ -82,17 +82,17 @@ export async function generateMetadata({
         "Software Download",
       ],
       openGraph: {
-        title: "Toolbox - Utility Software Collection",
+        title: "Toolbag - Utility Software Collection",
         description:
           "Find useful software in one place. From game tools to utilities!",
-        url: "https://toolbox.com/en",
-        siteName: "Toolbox",
+        url: "https://toolbag.vercel.app/en",
+        siteName: "Toolbag",
         locale: "en_US",
         type: "website",
       },
       twitter: {
         card: "summary_large_image",
-        title: "Toolbox - Utility Software Collection",
+        title: "Toolbag - Utility Software Collection",
         description:
           "Find useful software in one place. From game tools to utilities!",
       },
@@ -106,15 +106,15 @@ export async function generateMetadata({
       shortcut: "/favicon.svg",
       apple: "/favicon.svg",
     },
-    authors: [{ name: "Toolbox" }],
-    creator: "Toolbox",
-    publisher: "Toolbox",
+    authors: [{ name: "Toolbag" }],
+    creator: "Toolbag",
+    publisher: "Toolbag",
     formatDetection: {
       email: false,
       address: false,
       telephone: false,
     },
-    metadataBase: new URL("https://toolbox.com"),
+    metadataBase: new URL("https://toolbag.vercel.app"),
     alternates: {
       canonical: `/${locale}`,
       languages: {
@@ -157,13 +157,13 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
-        <link rel="canonical" href={`https://toolbox.com/${locale}`} />
-        <link rel="alternate" hrefLang="ko" href="https://toolbox.com/ko" />
-        <link rel="alternate" hrefLang="en" href="https://toolbox.com/en" />
+        <link rel="canonical" href={`https://toolbag.vercel.app/${locale}`} />
+        <link rel="alternate" hrefLang="ko" href="https://toolbag.vercel.app/ko" />
+        <link rel="alternate" hrefLang="en" href="https://toolbag.vercel.app/en" />
         <link
           rel="alternate"
           hrefLang="x-default"
-          href="https://toolbox.com/ko"
+          href="https://toolbag.vercel.app/ko"
         />
         {/* Google AdSense */}
         <script
