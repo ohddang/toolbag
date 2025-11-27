@@ -168,7 +168,6 @@ export default function Home() {
   const allTags = Array.from(
     new Set(
       categoryTools.flatMap((tool) => {
-        // @ts-expect-error - returnObjects option is valid but not in type definition
         const tags = t(`tools.${tool.id}.tags`, { returnObjects: true }) as unknown as string[];
         return tags;
       })
@@ -183,7 +182,6 @@ export default function Home() {
     
     // 태그 필터
     if (selectedTag) {
-      // @ts-expect-error - returnObjects option is valid but not in type definition
       const toolTags = t(`tools.${tool.id}.tags`, { returnObjects: true }) as unknown as string[];
       if (!toolTags.includes(selectedTag)) {
         return false;
@@ -387,7 +385,6 @@ export default function Home() {
                       </h3>
 
                       <div className="mb-3 flex flex-wrap gap-1.5 min-h-[32px]">
-                        {/* @ts-expect-error - returnObjects option is valid but not in type definition */}
                         {(t(`tools.${tool.id}.tags`, { returnObjects: true }) as unknown as string[]).map((tag: string, tagIndex: number) => {
                           const tagColors = [
                             { bg: "from-orange-200 to-white", text: "text-orange-800" },

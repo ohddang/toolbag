@@ -55,6 +55,15 @@ export function AdSense({
 
 // 디스플레이 광고 (자동 크기)
 export function DisplayAd({ adSlot }: { adSlot: string }) {
+  // 개발 환경에서는 placeholder 표시
+  if (process.env.NODE_ENV === 'development') {
+    return (
+      <div className="my-8 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 p-8 text-center">
+        <p className="text-sm text-gray-400">Ad Placeholder ({adSlot})</p>
+      </div>
+    );
+  }
+  
   return (
     <div className="my-8">
       <p className="mb-2 text-center text-xs text-slate-400">Advertisement</p>
@@ -65,6 +74,15 @@ export function DisplayAd({ adSlot }: { adSlot: string }) {
 
 // 인피드 광고 (콘텐츠 사이)
 export function InFeedAd({ adSlot }: { adSlot: string }) {
+  // 개발 환경에서는 placeholder 표시
+  if (process.env.NODE_ENV === 'development') {
+    return (
+      <div className="my-8 rounded-2xl border-2 border-dashed border-gray-300 bg-gray-50 p-6 text-center">
+        <p className="text-sm text-gray-400">In-Feed Ad Placeholder ({adSlot})</p>
+      </div>
+    );
+  }
+  
   return (
     <div className="my-8 rounded-2xl border border-slate-200 bg-slate-50 p-6">
       <p className="mb-4 text-center text-xs text-slate-400">Sponsored</p>

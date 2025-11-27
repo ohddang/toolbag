@@ -101,6 +101,11 @@ export async function generateMetadata({
 
   return {
     ...metadata[locale],
+    icons: {
+      icon: "/favicon.svg",
+      shortcut: "/favicon.svg",
+      apple: "/favicon.svg",
+    },
     authors: [{ name: "Toolbox" }],
     creator: "Toolbox",
     publisher: "Toolbox",
