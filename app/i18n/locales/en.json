@@ -7,7 +7,12 @@
   },
   "hero": {
     "title": "Useful Software in One Place",
-    "subtitle": "Discover all the software you need, from games to utilities"
+    "subtitle": "Discover all the software you need, from games to utilities",
+    "free": "Completely Free"
+  },
+  "tags": {
+    "title": "Tags",
+    "clearFilter": "Clear Filter"
   },
   "categories": {
     "all": "All"
@@ -34,7 +39,7 @@
     "contact": {
       "title": "Contact"
     },
-    "copyright": "© 2024 Toolbox. All rights reserved."
+    "copyright": "© 2025 Toolbox. All rights reserved."
   },
   "tools": {
     "1": {

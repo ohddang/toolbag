@@ -148,7 +148,7 @@ export default function Game2048Page() {
       {/* 푸터 */}
       <footer className="mt-12 border-t border-orange-100 bg-gradient-to-b from-orange-50 to-white py-8">
         <div className="mx-auto max-w-7xl px-6 text-center text-sm font-medium text-slate-500">
-          © 2024 Toolbox. All rights reserved.
+          © 2025 Toolbox. All rights reserved.
         </div>
       </footer>
       </div>

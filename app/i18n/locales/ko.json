@@ -7,7 +7,12 @@
   },
   "hero": {
     "title": "유용한 소프트웨어를 한 곳에서",
-    "subtitle": "게임부터 유틸리티까지, 필요한 모든 소프트웨어를 찾아보세요"
+    "subtitle": "게임부터 유틸리티까지, 필요한 모든 소프트웨어를 찾아보세요",
+    "free": "완전 무료"
+  },
+  "tags": {
+    "title": "태그",
+    "clearFilter": "필터 해제"
   },
   "categories": {
     "all": "전체"
@@ -34,7 +39,7 @@
     "contact": {
       "title": "문의"
     },
-    "copyright": "© 2024 Toolbox. All rights reserved."
+    "copyright": "© 2025 Toolbox. All rights reserved."
   },
   "tools": {
     "1": {

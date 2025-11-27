@@ -141,7 +141,6 @@ const tools: Tool[] = [
 
 export default function Home() {
   const { t, locale } = useTranslation();
-  const isKorean = locale === "ko";
   const searchParams = useSearchParams();
   const [selectedMainCategory, setSelectedMainCategory] =
     useState<MainCategory>("전체");
@@ -250,10 +249,8 @@ export default function Home() {
         {/* Hero Section */}
         <section className="border-b border-orange-100 bg-gradient-to-r from-orange-400 via-pink-400 to-rose-400">
           <div className="mx-auto max-w-7xl px-6 py-20 text-center">
-            <div className="mb-4 flex justify-center gap-3 text-5xl">
-              <span className="animate-bounce">🎮</span>
-              <span className="animate-bounce delay-100">🛠️</span>
-              <span className="animate-bounce delay-200">✨</span>
+            <div className="mb-6 inline-block rounded-full bg-white px-6 py-2 text-sm font-bold text-orange-600 shadow-lg animate-bounce border-2 border-orange-200">
+              ✨ {t("hero.free")}
             </div>
             <h2 className="mb-4 text-5xl font-extrabold tracking-tight text-white drop-shadow-lg">
               {t("hero.title")}
@@ -303,20 +300,21 @@ export default function Home() {
         </div>
 
         {/* Main Content */}
-        <main className="mx-auto max-w-7xl px-6 py-12">
+        <main className="bg-gradient-to-b from-orange-50/50 to-white py-12">
+          <div className="mx-auto max-w-7xl px-6">
           {/* 태그 필터 */}
           {allTags.length > 0 && (
-          <div className="mb-8 rounded-2xl bg-gradient-to-r from-orange-50 to-pink-50 p-6 shadow-md border border-orange-100">
+          <div className="mb-8 rounded-2xl bg-white p-6 shadow-md border-2 border-orange-200">
             <div className="flex items-center gap-3 mb-3">
               <span className="text-lg font-bold text-slate-900">
-                🏷️ {isKorean ? "태그" : "Tags"}
+                🏷️ {t("tags.title")}
               </span>
               {selectedTag && (
                 <button
                   onClick={() => setSelectedTag(null)}
                   className="text-xs px-3 py-1 bg-white rounded-full text-slate-600 hover:bg-slate-100 transition-colors border border-slate-200"
                 >
-                  ✕ {isKorean ? "필터 해제" : "Clear Filter"}
+                  ✕ {t("tags.clearFilter")}
                 </button>
               )}
             </div>
@@ -450,10 +448,11 @@ export default function Home() {
 
           {/* Bottom Ad */}
           <DisplayAd adSlot="1357924680" />
+          </div>
         </main>
 
         {/* Footer */}
-        <footer className="border-t border-orange-100 bg-gradient-to-b from-orange-50 to-white">
+        <footer className="border-t-2 border-orange-200 bg-gradient-to-b from-orange-100 to-orange-50">
           <div className="mx-auto max-w-7xl px-6 py-12">
             <div className="grid gap-8 md:grid-cols-4">
               <div className="md:col-span-2">
