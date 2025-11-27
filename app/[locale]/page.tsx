@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import {
   generateOrganizationSchema,
@@ -139,7 +139,7 @@ const tools: Tool[] = [
   },
 ];
 
-export default function Home() {
+function HomeContent() {
   const { t, locale } = useTranslation();
   const searchParams = useSearchParams();
   const [selectedMainCategory, setSelectedMainCategory] =
@@ -522,5 +522,38 @@ export default function Home() {
         </footer>
       </div>
     </>
+  );
+}
+
+function LoadingScreen() {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center gap-6">
+        {/* 로고 */}
+        <div className="flex h-20 w-20 items-center justify-center rounded-3xl bg-gradient-to-br from-orange-400 to-pink-500 shadow-xl animate-bounce">
+          <span className="text-4xl">🧰</span>
+        </div>
+        
+        {/* 로딩 텍스트 */}
+        <h2 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent">
+          Toolbox
+        </h2>
+        
+        {/* 로딩 도트 */}
+        <div className="flex gap-2">
+          <div className="w-3 h-3 rounded-full bg-orange-400 animate-bounce" style={{ animationDelay: '0ms' }}></div>
+          <div className="w-3 h-3 rounded-full bg-pink-400 animate-bounce" style={{ animationDelay: '150ms' }}></div>
+          <div className="w-3 h-3 rounded-full bg-orange-400 animate-bounce" style={{ animationDelay: '300ms' }}></div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<LoadingScreen />}>
+      <HomeContent />
+    </Suspense>
   );
 }
