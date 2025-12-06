@@ -45,37 +45,37 @@
     "1": {
       "title": "2048 Game",
       "description": "Addictive puzzle game! Merge same numbers to create the 2048 tile. Simple yet requires strategic thinking.",
-      "tags": ["Puzzle", "Strategy", "Classic"]
+      "tags": ["Puzzle", "Strategy"]
     },
     "16": {
       "title": "Roulette Game",
       "description": "Weight-based fair roulette! Set items and probabilities freely with stunning animations.",
-      "tags": ["Roulette", "Draw", "Weight"]
+      "tags": ["Roulette", "Draw"]
     },
     "17": {
       "title": "Color Finder Game",
       "description": "Brain training game to find different colored squares! Difficulty increases with each level.",
-      "tags": ["Brain", "Color", "Focus"]
+      "tags": ["Brain", "Color"]
     },
     "100": {
       "title": "Clock & Stopwatch",
       "description": "Large digital clock and precise stopwatch! Check time at a glance or measure time accurately.",
-      "tags": ["Clock", "Stopwatch", "Timer"]
+      "tags": ["Clock", "Stopwatch"]
     },
     "12": {
       "title": "IQ Test",
       "description": "Professional IQ test measuring logic, math, and pattern recognition! Check your intelligence quotient with 16 questions.",
-      "tags": ["IQ", "Intelligence", "Logic"]
+      "tags": ["IQ", "Intelligence"]
     },
     "13": {
       "title": "MBTI Personality Test",
       "description": "Which of 16 personality types are you? Experience the world's most trusted personality assessment.",
-      "tags": ["MBTI", "Personality", "Type"]
+      "tags": ["MBTI", "Personality"]
     },
     "20": {
       "title": "Estrogen/Testosterone Test",
       "description": "What's your estrogen and testosterone tendencies? Fun personality test measuring emotional and logical traits!",
-      "tags": ["Estrogen", "Testosterone", "Tendency"]
+      "tags": ["Estrogen", "Testosterone"]
     }
   }
 }

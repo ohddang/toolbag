@@ -230,14 +230,14 @@ function HomeContent() {
 
         {/* Hero Section */}
         <section className="border-b border-orange-100 bg-gradient-to-r from-orange-400 via-pink-400 to-rose-400">
-          <div className="mx-auto max-w-7xl px-6 py-12 sm:py-16 md:py-20 text-center">
-            <div className="mb-4 sm:mb-6 inline-block rounded-full bg-white px-4 sm:px-6 py-1.5 sm:py-2 text-xs sm:text-sm font-bold text-orange-600 shadow-lg animate-bounce border-2 border-orange-200">
+          <div className="mx-auto max-w-7xl px-6 py-20 text-center">
+            <div className="mb-6 inline-block rounded-full bg-white px-6 py-2 text-sm font-bold text-orange-600 shadow-lg animate-bounce border-2 border-orange-200">
               ✨ {t("hero.free")}
             </div>
-            <h2 className="mb-3 sm:mb-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white drop-shadow-lg">
+            <h2 className="mb-4 text-3xl md:text-5xl font-extrabold tracking-tight text-white drop-shadow-lg">
               {t("hero.title")}
             </h2>
-            <p className="mx-auto max-w-2xl text-base sm:text-lg md:text-xl text-white/95 font-medium px-4">
+            <p className="mx-auto max-w-2xl text-sm md:text-xl text-white/95 font-medium">
               {t("hero.subtitle")}
             </p>
           </div>
