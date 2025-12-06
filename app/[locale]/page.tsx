@@ -10,7 +10,7 @@ import {
   generateBreadcrumbSchema,
 } from "../structured-data";
 import { useTranslation } from "../i18n/client";
-import { LanguageSwitcher } from "../components/LanguageSwitcher";
+import { Header } from "../components/Header";
 import { DisplayAd, InFeedAd } from "../components/AdSense";
 import { StructuredData } from "../components/StructuredData";
 
@@ -205,46 +205,12 @@ function HomeContent() {
       
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
         {/* Header */}
-        <header className="sticky top-0 z-30 border-b border-orange-100 bg-white/90 backdrop-blur-sm shadow-sm">
-          <div className="mx-auto max-w-7xl px-6 py-4">
-            <div className="flex items-center justify-between">
-              <Link href={`/${locale}`} className="flex items-center gap-3 group">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-400 to-pink-500 shadow-lg rotate-3 group-hover:rotate-0 transition-transform">
-                  <span className="text-2xl font-bold text-white">🧰</span>
-                </div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent">
-                  Toolbag
-                </h1>
-              </Link>
-              <nav
-                className="hidden items-center gap-6 md:flex"
-                aria-label="Main navigation"
-              >
-                {mainCategories.slice(1).map((category) => (
-                  <Link
-                    key={category}
-                    href={`/${locale}?category=${category}`}
-                    scroll={false}
-                    className={`text-sm font-bold transition-all rounded-full px-4 py-2 ${
-                      selectedMainCategory === category
-                        ? "bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-md"
-                        : "text-slate-600 hover:text-orange-600 hover:bg-orange-50"
-                    }`}
-                  >
-                    {category === "게임"
-                      ? t("header.games")
-                      : category === "유틸리티"
-                        ? t("header.utilities")
-                        : t("header.tests")}
-                  </Link>
-                ))}
-                <div className="hidden md:block">
-                  <LanguageSwitcher />
-                </div>
-              </nav>
-            </div>
-          </div>
-        </header>
+        <Header
+          theme="orange"
+          showNavigation={true}
+          sticky={true}
+          selectedCategory={selectedMainCategory !== "전체" ? selectedMainCategory : undefined}
+        />
 
         {/* Hero Section */}
         <section className="border-b border-orange-100 bg-gradient-to-r from-orange-400 via-pink-400 to-rose-400">
@@ -463,20 +429,20 @@ function HomeContent() {
                     Toolbag
                   </span>
                 </Link>
-                <p className="text-sm text-slate-600">
+                <p className="text-sm text-orange-700">
                   {t("footer.company.description")}
                 </p>
               </div>
               <nav aria-label={t("footer.services.title")}>
-                <h4 className="mb-3 font-semibold text-slate-900">
+                <h4 className="mb-3 font-semibold text-orange-800">
                   {t("footer.services.title")}
                 </h4>
-                <ul className="space-y-2 text-sm text-slate-600">
+                <ul className="space-y-2 text-sm text-orange-600">
                   <li>
                     <Link
                       href={`/${locale}?category=게임`}
                       scroll={false}
-                      className="hover:text-slate-900"
+                      className="hover:text-orange-800 transition-colors"
                     >
                       {t("footer.services.games")}
                     </Link>
@@ -485,7 +451,7 @@ function HomeContent() {
                     <Link
                       href={`/${locale}?category=유틸리티`}
                       scroll={false}
-                      className="hover:text-slate-900"
+                      className="hover:text-orange-800 transition-colors"
                     >
                       {t("footer.services.utilities")}
                     </Link>
@@ -494,7 +460,7 @@ function HomeContent() {
                     <Link
                       href={`/${locale}?category=테스트`}
                       scroll={false}
-                      className="hover:text-slate-900"
+                      className="hover:text-orange-800 transition-colors"
                     >
                       {t("footer.services.tests")}
                     </Link>
@@ -502,14 +468,14 @@ function HomeContent() {
                 </ul>
               </nav>
               <address className="not-italic">
-                <h4 className="mb-3 font-semibold text-slate-900">
+                <h4 className="mb-3 font-semibold text-orange-800">
                   {t("footer.contact.title")}
                 </h4>
-                <ul className="space-y-2 text-sm text-slate-600">
+                <ul className="space-y-2 text-sm text-orange-600">
                   <li>
                     <a
                       href="mailto:ohddang509@gmail.com"
-                      className="hover:text-slate-900"
+                      className="hover:text-orange-800 transition-colors"
                     >
                       ohddang509@gmail.com
                     </a>
@@ -517,7 +483,7 @@ function HomeContent() {
                 </ul>
               </address>
             </div>
-            <div className="mt-8 border-t border-slate-200 pt-8 text-center text-sm text-slate-500">
+            <div className="mt-8 border-t border-orange-300 pt-8 text-center text-sm text-orange-600">
               {t("footer.copyright")}
             </div>
           </div>
